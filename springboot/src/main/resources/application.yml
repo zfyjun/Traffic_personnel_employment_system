@@ -1,0 +1,23 @@
+server:
+  port: 8090
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/exam?serveTimezone=GMT%2b8
+    username: root
+    password: root
+  servlet:
+    multipart:
+      max-file-size: 100MB
+      max-request-size: 100MB
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+
+files:
+  upload:
+    path: E:/Desktop/2022/files/
+
+spring.mvc.pathmatch.matching-strategy: ANT_PATH_MATCHER
+
